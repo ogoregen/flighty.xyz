@@ -1,0 +1,2 @@
+# flighty.xyz
+Personal website
