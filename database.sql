@@ -1,0 +1,30 @@
+CREATE DATABASE flighty;
+
+CREATE USER 'flighty'@'localhost' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON flighty.* TO 'flighty'@'localhost';
+FLUSH PRIVILEGES;
+
+USE flighty;
+
+CREATE TABLE users (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT_NULL,
+  password VARCHAR(60) NOT_NULL
+);
+
+CREATE TABLE pages (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  menu_index INT(11) NOT_NULL,
+  title VARCHAR(255) NOT_NULL,
+  content TEXT NOT_NULL,
+  content_raw TEXT NOT_NULL
+);
+
+CREATE TABLE articles (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT_NULL,
+  creation_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  description TEXT NULL,
+  content TEXT NOT_NULL,
+  content_raw TEXT NOT_NULL
+);
