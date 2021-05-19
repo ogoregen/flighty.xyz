@@ -1,5 +1,9 @@
 flighty.xyz is a minimalist, article focused blog. Its design aims for clarity.
 
+## CEIT133
+
+You can use the username `flighty_admin` and pasword `ceit133` on [flighty.xyz/admin](https://flighty.xyz/admin) to log in to the admin panel.
+
 ## Features
 
 * Fully responsive, mobile friendly, and accesible design
@@ -13,18 +17,16 @@ flighty.xyz is a minimalist, article focused blog. Its design aims for clarity.
   * Customizable menu order of pages
 * Command line interface superuser creation
 
-## Usage
-
-### Logging in to the admin panel
-
-You can use the username `flighty_admin` and pasword `ceit133` on [flighty.xyz/admin](https://flighty.xyz/admin) to log in to the admin panel.
-
-### Interactive Superuser Creation
+## Interactive Superuser Creation
 
 ```console
 you@here:~$ php manage.php createuser
 ```
 The script will walk you through the process, prompting for username and password. After user creation, you can log in on `/admin` or `/login`.
+
+## Deployment
+
+Required MySQL code for the database is provided under `data/`. Database credentials must be put into `database.php`. The website will be now ready to be served with Apache. The folder `public/` should be served.
 
 ## Dependencies
 
