@@ -2,7 +2,7 @@ flighty.xyz is a minimalist, article focused blog. Its design aims for clarity.
 
 ## CEIT133
 
-You can use the username `flighty_admin` and pasword `ceit133` on [flighty.xyz/admin](https://flighty.xyz/admin) to log in to the admin panel.
+The website is live on flighty.xyz. You can use the username `flightyadmin` and pasword `ceit133` on [flighty.xyz/admin](https://flighty.xyz/admin) to log in to the admin panel.
 
 ## Features
 

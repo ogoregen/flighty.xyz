@@ -1,15 +1,15 @@
-
 <?php
 
-if($argc == 1) echo "Error: Argument expected.";
-else{
+// command line script for superuser creation.
+// usage:
+// manage.php createuser
 
+if($argc == 1) echo "Error: Argument expected.".PHP_EOL;
+else if ($argc == 2){
+    
     switch($argv[1]){
-
-        case "createuser":
-            
-            require_once "functions.php";
-            $connection = mysqli_connect("localhost", "libero", "nX6TVJfRkHKqNm", "libero");
+        case "createuser": 
+            require "database.php";
             $stdin = fopen("php://stdin", "r");
             while(true){
 
@@ -30,7 +30,8 @@ else{
             if($result) echo "User ".$username." created.";
             else echo "Error: Something went wrong while creating database record. Please try again.";
             break;
+        default:
+            echo "Unknown argument ".$argv[1].PHP_EOL;
+            break;
     }
 }
-
-?>
