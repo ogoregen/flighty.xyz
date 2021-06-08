@@ -2,16 +2,9 @@ flighty.xyz is a minimalist, article focused blog.
 
 ## Features
 
-* Fully responsive, mobile friendly, and accesible design
-  * Dedicated mobile navigation menu
-* Dark theme
-* Admin panel
-  * Focused view
-  * Entry creation - articles and pages
-  * Editable and deletable entries
-  * Markdown text formatting
-  * Customizable menu order of pages
-* Command line interface superuser creation
+* CLI superuser creation
+* Markdown text formatting
+* Page and article management
 
 ## Interactive Superuser Creation
 
