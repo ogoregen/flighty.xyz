@@ -5,6 +5,7 @@ flighty.xyz is a minimalist, article focused blog.
 * CLI superuser creation
 * Markdown text formatting
 * Page and article management
+* Dark mode
 
 ## Interactive Superuser Creation
 
