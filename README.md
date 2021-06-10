@@ -1,4 +1,4 @@
-flighty.xyz is a minimalist, article focused blog.
+flighty.xyz is a minimalist, article focused blog. Published as a potential inspiration source.
 
 ## Features
 
@@ -6,17 +6,6 @@ flighty.xyz is a minimalist, article focused blog.
 * Markdown text formatting
 * Page and article management
 * Dark mode
-
-## Interactive Superuser Creation
-
-```console
-you@here:~$ php manage.php createuser
-```
-The script will walk you through the process, prompting for username and password. After user creation, you can log in on `/admin` or `/login`.
-
-## Deployment
-
-Required MySQL code for the database is provided under `data/`. Database credentials must be put into `database.php`. The website will be now ready to be served with Apache. The folder `public/` should be served.
 
 ## Dependencies
 
